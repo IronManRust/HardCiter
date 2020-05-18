@@ -1,0 +1,6 @@
+{
+    "Settings": {
+        "Environment": "QA",
+        "ShowUnhandledExceptionDetails": false
+    }
+}

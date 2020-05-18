@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyTitle>HardCiter.Processor.CiteProc</AssemblyTitle>
+    <Product>HardCiter.Processor.CiteProc</Product>
+    <Description>HardCiter.Processor.CiteProc</Description>
+    <Authors>Shawn Headrick</Authors>
+    <Company>Headrick Innovations</Company>
+    <Copyright>Copyright © 2020. All rights reserved.</Copyright>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <CodeAnalysisRuleSet>../HardCiter.ruleset</CodeAnalysisRuleSet>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Locales\locales-en-US.xml" />
+    <EmbeddedResource Include="Definitions\american-sociological-association.csl" />
+    <EmbeddedResource Include="Definitions\apa.csl" />
+    <EmbeddedResource Include="Definitions\apa-5th-edition.csl" />
+    <EmbeddedResource Include="Definitions\apa-6th-edition.csl" />
+    <EmbeddedResource Include="Definitions\chicago-fullnote-bibliography.csl" />
+    <EmbeddedResource Include="Definitions\harvard-cite-them-right.csl" />
+    <EmbeddedResource Include="Definitions\modern-language-association-7th-edition.csl" />
+    <EmbeddedResource Include="Definitions\modern-language-association.csl" />
+    <EmbeddedResource Include="Definitions\turabian-fullnote-bibliography.csl" />
+    <EmbeddedResource Include="Processors\CiteProc.js" />
+    <EmbeddedResource Include="Processors\BaseProcessor.js" />
+    <EmbeddedResource Include="Processors\BibliographyProcessor.js" />
+    <EmbeddedResource Include="Processors\CitationProcessor.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HardCiter.Domain\HardCiter.Domain.csproj" />
+  </ItemGroup>
+</Project>

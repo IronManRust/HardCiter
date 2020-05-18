@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyTitle>HardCiter.API</AssemblyTitle>
+    <Product>HardCiter.API</Product>
+    <Description>HardCiter.API</Description>
+    <Authors>Shawn Headrick</Authors>
+    <Company>Headrick Innovations</Company>
+    <Copyright>Copyright © 2020. All rights reserved.</Copyright>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <CodeAnalysisRuleSet>../HardCiter.ruleset</CodeAnalysisRuleSet>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HardCiter.Domain\HardCiter.Domain.csproj" />
+  </ItemGroup>
+</Project>

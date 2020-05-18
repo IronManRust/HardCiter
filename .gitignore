@@ -1,0 +1,11 @@
+# User-Specific Files
+*.suo
+*.user
+
+# Build Results
+**/bin
+**/obj
+
+# Test Results
+**/TestCoverage
+**/TestResults

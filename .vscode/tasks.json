@@ -1,0 +1,71 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Solution - Clean (Debug)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "clean",
+                "HardCiter.sln",
+                "/property:configuration=Debug"
+            ]
+        },
+        {
+            "label": "Solution - Clean (Release)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "clean",
+                "HardCiter.sln",
+                "/property:configuration=Release"
+            ]
+        },
+        {
+            "label": "Solution - Build (Debug)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "HardCiter.sln",
+                "/property:configuration=Debug"
+            ]
+        },
+        {
+            "label": "Solution - Build (Release)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "HardCiter.sln",
+                "/property:configuration=Release"
+            ]
+        },
+        {
+            "label": "Solution - Publish (Debug)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "publish",
+                "HardCiter.sln",
+                "/property:configuration=Debug"
+            ]
+        },
+        {
+            "label": "Solution - Publish (Release)",
+            "type": "shell",
+            "problemMatcher": "$msCompile",
+            "command": "dotnet",
+            "args": [
+                "publish",
+                "HardCiter.sln",
+                "/property:configuration=Release"
+            ]
+        }
+    ]
+}
