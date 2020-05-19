@@ -2,6 +2,8 @@
 
 ![HardCiter Logo](./README-logo.png "HardCiter Logo")
 
+[https://hard-citer.herokuapp.com](https://hard-citer.herokuapp.com)
+
 This service provides bibliographic and citation information in various styles.
 
 While supporting an extensible architecture, the initial implementation uses CiteProc / CSL for processing:
@@ -48,7 +50,10 @@ While there are multiple ways to consume a REST-ful service, a useful tool to co
 * `autorest --input-file="swagger.json" --output-folder="./code/" --namespace="HardCiter" --go` - Generate Go client files.
 * `autorest --input-file="swagger.json" --output-folder="./code/" --namespace="HardCiter" --typescript` - Generate TypeScript client files.
 
+## Acknowledgements
+
+Many thanks to Nancy for lending me her librarian skills in sanity checking the output of this service.
+
 ## TODO List
 
 * [Update CSL Processor](https://github.com/Juris-M/citeproc-js/releases)
-* Figure Out Free .NET / Node.js Hosting

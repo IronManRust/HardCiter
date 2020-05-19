@@ -40,6 +40,13 @@ namespace HardCiter.Service.Managers
 
         internal Status GetStatus()
         {
+            string environment = "Invalid";
+            if (_settings != null &&
+                _settings.Value != null &&
+                !string.IsNullOrWhiteSpace(_settings.Value.Environment))
+            {
+                environment = _settings.Value.Environment;
+            }
             try
             {
                 List<KeyValuePair<string, string>> metaData = new List<KeyValuePair<string, string>>();
@@ -49,17 +56,19 @@ namespace HardCiter.Service.Managers
                 return new Status()
                 {
                     Health = Health.Healthy,
-                    Environment = _settings.Value.Environment,
+                    Environment = environment,
                     MetaData = metaData
                 };
             }
-            catch
+            catch (Exception ex)
             {
+                List<KeyValuePair<string, string>> metaData = new List<KeyValuePair<string, string>>();
+                metaData.Add(new KeyValuePair<string, string>("Error", ex.Message));
                 return new Status()
                 {
                     Health = Health.Unhealthy,
-                    Environment = string.Empty,
-                    MetaData = new List<KeyValuePair<string, string>>()
+                    Environment = environment,
+                    MetaData = metaData
                 };
             }
         }
