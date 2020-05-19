@@ -1,0 +1,30 @@
+{
+    "name": "hard-citer",
+    "version": "1.0.0",
+    "description": "This service provides bibliographic and citation information in various styles.",
+    "scripts": {
+        "build": "echo 'Build Complete'"
+    },
+    "keywords": [
+        "citeproc",
+        "citeproc-js",
+        "citations",
+        "bibliographies",
+        "dotnet-core",
+        "service",
+        "node-js"
+    ],
+    "author": {
+        "name": "Shawn Headrick",
+        "email": "shawn_headrick@yahoo.com",
+        "url": "https://github.com/IronManRust"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/IronManRust/HardCiter",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IronManRust/HardCiter.git"
+    },
+    "devDependencies": {},
+    "dependencies": {}
+}
