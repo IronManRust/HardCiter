@@ -77,9 +77,17 @@ namespace HardCiter.Service
                 options.DocumentFilter<PolymorphismDocumentFilter>(typeof(ContentItem), ContentItem.Discriminator);
                 options.DocumentFilter<PolymorphismDocumentFilter>(typeof(Article), Article.Discriminator);
                 options.DocumentFilter<PolymorphismDocumentFilter>(typeof(BookBase), BookBase.Discriminator);
+                options.DocumentFilter<PolymorphismDocumentFilter>(typeof(CompositionBase), CompositionBase.Discriminator);
+                options.DocumentFilter<PolymorphismDocumentFilter>(typeof(GovernmentBase), GovernmentBase.Discriminator);
+                options.DocumentFilter<PolymorphismDocumentFilter>(typeof(MultimediaItem), MultimediaItem.Discriminator);
+                options.DocumentFilter<PolymorphismDocumentFilter>(typeof(Recording), Recording.Discriminator);
                 options.SchemaFilter<PolymorphismSchemaFilter>(typeof(ContentItem));
                 options.SchemaFilter<PolymorphismSchemaFilter>(typeof(Article));
                 options.SchemaFilter<PolymorphismSchemaFilter>(typeof(BookBase));
+                options.SchemaFilter<PolymorphismSchemaFilter>(typeof(CompositionBase));
+                options.SchemaFilter<PolymorphismSchemaFilter>(typeof(GovernmentBase));
+                options.SchemaFilter<PolymorphismSchemaFilter>(typeof(MultimediaItem));
+                options.SchemaFilter<PolymorphismSchemaFilter>(typeof(Recording));
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
             });
         }
