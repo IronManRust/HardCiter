@@ -247,3 +247,8 @@ Many thanks to Nancy for lending me her librarian skills in sanity checking the 
 ## TODO List
 
 * [Update CSL Processor](https://github.com/Juris-M/citeproc-js/releases)
+* Update .NET Framework Target (`netcoreapp2.1` → `netcoreapp3.1`)
+* Update Node.js Library
+  * Reasoning - [Obsoleting Microsoft.AspNetCore.NodeServices](https://github.com/dotnet/aspnetcore/issues/12890)
+  * Existing - [Microsoft.AspNetCore.NodeServices](https://www.nuget.org/packages/Microsoft.AspNetCore.NodeServices/)
+  * Replacement - [Jering.Javascript.NodeJS](https://www.nuget.org/packages/Jering.Javascript.NodeJS/)
