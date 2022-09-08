@@ -2,12 +2,6 @@
 
 ![HardCiter Logo](./README-logo.png "HardCiter Logo")
 
-## Demo
-
-Try it out!
-
-[https://hard-citer.herokuapp.com](https://hard-citer.herokuapp.com)
-
 ## Description
 
 This service provides bibliographic and citation information in various styles.
@@ -48,9 +42,9 @@ The following tasks are available from the service project (`./HardCiter.Service
 
 Create a Chicago v17 HTML citation for Moby Dick:
 
-```HTTP
+```BASH
 curl
--X POST "https://hard-citer.herokuapp.com/api/1.0/citation/book?style=Chicago17&format=HTML"
+-X POST "/api/1.0/citation/book?style=Chicago17&format=HTML"
 -H "accept: application/json"
 -H "Content-Type: application/json"
 -d
@@ -98,9 +92,9 @@ curl
 
 Create a MLA v8 HTML citation for Alice in Wonderland:
 
-```HTTP
+```BASH
 curl
--X POST "https://hard-citer.herokuapp.com/api/1.0/citation/book?style=MLA8&format=HTML"
+-X POST "/api/1.0/citation/book?style=MLA8&format=HTML"
 -H "accept: application/json"
 -H "Content-Type: application/json"
 -d
@@ -142,9 +136,9 @@ curl
 
 Create an APA v7 HTML bibliography for both:
 
-```HTTP
+```BASH
 curl
--X POST "https://hard-citer.herokuapp.com/api/1.0/bibliography?style=APA7&format=HTML"
+-X POST "/api/1.0/bibliography?style=APA7&format=HTML"
 -H "accept: application/json"
 -H "Content-Type: application/json"
 -d
